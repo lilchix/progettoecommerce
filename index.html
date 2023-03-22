@@ -27,12 +27,15 @@
 
     .swiper {
       width: 100%;
-      height: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     .swiper-slide {
       background-position: center;
       background-size: cover;
+      width: 300px;
+      height: 300px;
     }
 
     .swiper-slide img {
@@ -47,20 +50,33 @@
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="https://cdn.shopify.com/s/files/1/0528/7460/8804/products/nike-dunk-low-next-nature-black-white-w-2-1000.png?v=1666952969&width=1445" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/nike-dunk-low-next-nature-university-red-2_1200x.png?v=1646832177" />
+        <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/dunk-low-archeo-pink-213212_600x.png?v=1638813894" />
       </div>
       <div class="swiper-slide">
         <img src="https://cdn.restocks.net/cdn-cgi/image/width=1000/storage/images/products/DD1391-102/2.png" />
       </div>
       <div class="swiper-slide">
-        <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/dunk-low-archeo-pink-213212_600x.png?v=1638813894" />
+        <img src="https://cdn.shopify.com/s/files/1/0664/5412/6827/products/nike-dunk-low-easter-w-2-1000_740x.png?v=1665502376" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0594/7781/9562/products/nike-dunk-low-court-purple-2021-DD1391-104-wethenew-1_2_2000x_91473125-9fc1-4a0a-a64a-28b3bf054343.png?v=1674661347&width=1445" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/dunk-low-sp-orange-blaze-syracuse-321082_600x.png?v=1638813937" />
+      </div>
+      <div class="swiper-slide">
+        <img src="http://cdn.shopify.com/s/files/1/0532/9299/0634/products/nike-dunk-low-laser-orange-w-2-1000.png?v=1622880440" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/dunk-low-green-glow-807044_600x.png?v=1638813882" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0574/5937/6176/products/nike-dunk-low-ocean-w_jpg.png?v=1663894994&width=1445" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://platano-sneakers.es/wp-content/uploads/2022/09/image-10-1_cb134cc5-15fb-4906-af63-6a48d5567e86.png" />
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
 
@@ -70,19 +86,22 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
       },
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
       },
     });
   </script>
 </body>
 
 </html>
-
