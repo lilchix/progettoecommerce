@@ -1,64 +1,342 @@
-html,
-    body {
+html, body {
       position: relative;
       height: 100%;
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 14px;
       color: #000;
-      margin: 0;
-      padding: 0;
-      background-image: url("https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47492.jpg");
+      background-image: url("immagini/sfondosito.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-size: 100%;
       background-size: cover;
       background-position: center;
-    }
+}
 
-.card-img-top:hover {
-    opacity: 0.5;    
+/*header*/
+
+.headline{
+  z-index: 3;
+  margin-top: 30px;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  background-color: #935931;
+}
+.navbar-toggler {
+	width: 100%;
+}
+
+.casella-logo{
+  display: inline-block;
+  width: 50%;
+}
+
+.logo{
+  width: 160px;
+  margin-top: 15px;
+}
+
+/*menu*/
+
+
+span {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+  }
+  
+  ul {
+	display: block;
+	list-style-type: none;
+	text-align: right;
+  }
+  
+  a {
+	color: #FFF;
+  }
+  a:hover {
+	opacity: 0.7;
+  }
+ 
+  
+  .menu {
+	margin: 0 20px 0 0;
+	padding-left: 1.25em;
+	cursor: pointer;
+	position: relative;
+	width: 40px;
+	height: 50px;
+	text-align: right;
+  }
+  
+  .menu-close {
+	color: white;
+	font-size: 0em;
+	opacity: 0;
+	text-align: center;
+	font-weight: bold;
+  
+	-webkit-transition: 0.2s;
+			transition: 0.2s;
+  }
+  
+  .menu-close-visible {
+	font-size: 2em;
+	opacity: 1;
+  
+	-webkit-transition: 0.2s 0.4s;
+			transition: 0.2s 0.4s;
+  }
+  
+  .menu-global {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	height: 5px; 
+	width: 100%;
+	background-color: white;
+  
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	-webkit-transition: 0.2s;
+			transition: 0.2s;
+  }
+  
+  .menu-global:hover {
+	left: 10px;
+	-webkit-transition: all 0.2s;
+			transition: all 0.2s;
+  }
+  
+  .menu-top {
+	top: 0;
+  }
+  .menu-middle {
+	top: 18px;
+  }
+  .menu-bottom {
+	top: 36px;
+  }
+  
+  .menu-text{
+	opacity: 0;
+	font-size: 0em;
+	padding: 10px 0;
+	-webkit-transition: 0.1s;
+			transition: 0.1s;
+  }
+  
+  .expand {
+	box-shadow: rgba(0, 0, 0, 0.1) -2.5px 5px 7.5px, rgba(0, 0, 0, 0.1) 2.5px 5px 7.5px;
+	width: 200px;
+	height: 50px;
+  
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+  }
+  
+  .menu-top-expand {
+	top: 50px;
+	background: #FFCD9C;
+  
+	-webkit-transition: all 0.5s 0.2s, left 0.1s;
+			transition: all 0.5s 0.2s, left 0.1s;
+  }
+  
+  .menu-middle-expand {
+	top: 100px;
+	background: #DD925F;
+  
+	-webkit-transition: all 0.5s 0.1s, left 0.1s;
+			transition: all 0.5s 0.1s, left 0.1s;
+  }
+  
+  .menu-bottom-expand {
+	top: 150px;
+
+	background: #935931;
+  
+	-webkit-transition: all 0.5s, left 0.1s;
+			transition: all 0.5s, left 0.1s;
+  }
+  
+  .menu-text-expand{
+	color: white;
+	opacity: 0.8;
+	padding: 10px;
+	font-size: 1.3em;
+	-webkit-transition: all 0.2s 0.7s, font-size 0.1s;
+			transition: all 0.2s 0.7s, font-size 0.1s;
   }
 
-.navbar-toggler {
-  background-color: brown;
-}
-
-.btn-primary{
-  background-color:brown !important;
-  border-color:brown !important;
-}
-
-#navbarNav{
-  float: right !important; 
-}
-
-form{
-  Background-color: white;
-  Background-opacity: 50%;
-  padding: 20px;
-  border-radius: 20px;
+.boxcarrello{
+	float: right;
+	align-content: right;
+	margin-right: 20px;
 }
 
 /*swiper*/
 
 .swiper {
-      width: 100%;
-      height: 80%;
-    }
+  width: 100%;
+  height: 90%;
+  margin-top: -30px;
+}
 
 .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  background: #DD925F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.swiper-pagination{
+	align-items: center;
+}
+
+/*intestazione home*/
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  color: black;
+  margin: 40px auto -30px auto;
+  text-shadow: 0px 0px 6px rgba(255,255,255,10);
+}
+
+
+/*box prodotti*/
+
+#box-prodotti{
+  margin: 3% auto;
+}
+
+.card-img-top:hover {
+    opacity: 0.5;  
+  }
+
+.navbar-toggler {
+  background-color: red;
+}
+
+
+.btn-primary {
+  background-color:#935931 !important;
+  border-color:none;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #935931;
+  color: white;
+  padding: 10px;
+  
+}
+
+.contatti-social{
+  display:inline-block;
+  margin: 0px 30px;
+}
+
+#map {
+  width: auto;
+  height: 150px;
+  margin-right:40px
+}
+
+.fot{
+  display: inline-block;
+  margin: 10px auto;
+  vertical-align: top;
+}
+
+#rimandosocial{
+  margin-left:20px ;
+  padding-left:20px
+}
+
+.social{
+  margin: 10px 30px 10px 0px;
+  display: inline-block;
+  color: white;
+
+}
+
+#testofooter{
+  max-width: 500px;
+  font-size: 12px;
+  text-align: left;
+  color: #FFE6AE;
+}
+
+
+
+
+
+
+
+
+
+
+/*carrello*/
+
+#spazio-vuoto{
+  width: 100%;
+  height: 10%;
+}
+
+#intestazione-carrello {
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  color: black;
+  margin: 30px auto;
+  text-shadow: 0px 0px 6px rgba(255,255,255,10);
+}
+
+h2 {
+  text-align: center;
+}
+
+#cart-items {
+  margin: 20px;
+}
+
+.cart-item {
+  background-color: white;
+  padding: 10px;
+  margin: 0px auto 10px auto;
+  width: 50%;
+  text-align: right;
+}
+
+#cart-total {
+  font-weight: bold;
+  color: black;
+}
+
+#checkout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #935931;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/*carrello*/
+.headline-carrello{
+  z-index: 3;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  background-color: #935931;
+}
