@@ -38,135 +38,184 @@ html, body {
 /*menu*/
 
 
-span {
-	display: inline-block;
-	vertical-align: middle;
-	color: white;
-  }
-  
-  ul {
-	display: block;
-	list-style-type: none;
-	text-align: right;
-  }
-  
-  a {
-	color: #FFF;
-  }
-  a:hover {
-	opacity: 0.7;
-  }
- 
-  
-  .menu {
-	margin: 0 20px 0 0;
-	padding-left: 1.25em;
-	cursor: pointer;
-	position: relative;
-	width: 40px;
-	height: 50px;
-	text-align: right;
-  }
-  
-  .menu-close {
-	color: white;
-	font-size: 0em;
-	opacity: 0;
-	text-align: center;
-	font-weight: bold;
-  
-	-webkit-transition: 0.2s;
-			transition: 0.2s;
-  }
-  
-  .menu-close-visible {
-	font-size: 2em;
-	opacity: 1;
-  
-	-webkit-transition: 0.2s 0.4s;
-			transition: 0.2s 0.4s;
-  }
-  
-  .menu-global {
-	z-index: -1;
-	position: absolute;
-	left: 0;
-	height: 5px; 
-	width: 100%;
-	background-color: white;
-  
-	-webkit-backface-visibility: hidden;
-			backface-visibility: hidden;
-	-webkit-transition: 0.2s;
-			transition: 0.2s;
-  }
-  
-  .menu-global:hover {
-	left: 10px;
-	-webkit-transition: all 0.2s;
-			transition: all 0.2s;
-  }
-  
-  .menu-top {
-	top: 0;
-  }
-  .menu-middle {
-	top: 18px;
-  }
-  .menu-bottom {
-	top: 36px;
-  }
-  
-  .menu-text{
-	opacity: 0;
-	font-size: 0em;
-	padding: 10px 0;
-	-webkit-transition: 0.1s;
-			transition: 0.1s;
-  }
-  
-  .expand {
-	box-shadow: rgba(0, 0, 0, 0.1) -2.5px 5px 7.5px, rgba(0, 0, 0, 0.1) 2.5px 5px 7.5px;
-	width: 200px;
-	height: 50px;
-  
-	-webkit-backface-visibility: hidden;
-			backface-visibility: hidden;
-  }
-  
-  .menu-top-expand {
-	top: 50px;
-	background: #FFCD9C;
-  
-	-webkit-transition: all 0.5s 0.2s, left 0.1s;
-			transition: all 0.5s 0.2s, left 0.1s;
-  }
-  
-  .menu-middle-expand {
-	top: 100px;
-	background: #DD925F;
-  
-	-webkit-transition: all 0.5s 0.1s, left 0.1s;
-			transition: all 0.5s 0.1s, left 0.1s;
-  }
-  
-  .menu-bottom-expand {
-	top: 150px;
+/* MENU STYLE */
 
-	background: #935931;
+.menulink {
+
+  font-family: 'Muli', sans-serif;
+	padding-top: 25px;
+	font-size: 14px;
+  color: #a2e7da;
+    
+}
+
+.menu-right {
   
-	-webkit-transition: all 0.5s, left 0.1s;
-			transition: all 0.5s, left 0.1s;
-  }
+	width: 90%;
+	position: fixed;
+	float: left;
+	visibility: hidden;
+	margin-left: 50px;
+ 	transition:0.6s;
+ 	-webkit-transition:1.5s;
+  -moz-transition:1.5s;
+  opacity: 1;
+  padding-top: 10px;
   
-  .menu-text-expand{
-	color: white;
-	opacity: 0.8;
-	padding: 10px;
-	font-size: 1.3em;
-	-webkit-transition: all 0.2s 0.7s, font-size 0.1s;
-			transition: all 0.2s 0.7s, font-size 0.1s;
-  }
+}
+
+.menu-right-display {
+  
+	visibility: visible;
+	margin-left: 0px;
+  
+}
+
+.menu-right-close {
+  
+	visibility: visible;
+	margin-right: -20px;
+	opacity: 0;
+  
+}
+
+.itemsmenu {
+  
+	text-align: right;	
+	padding: 0px;
+  margin-top: 20px;
+  
+}
+
+.itemsmenu li {
+  
+	margin-top: 20px;
+	letter-spacing: 3px;
+	font-weight: 600;
+  display: inline;
+  padding-right: 30px;
+  
+}
+
+.menu-item {
+  
+	text-transform: uppercase;
+	font-family: 'Muli', sans-serif;
+  font-size: 11px;
+  
+}
+
+.menu {
+  
+	position: relative;
+	display:  inline-block;
+	width: 90px;
+	height: 60px;
+	margin: 60px;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  
+}
+
+.menu span {
+  
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+  
+}
+
+.menu span:before, .menu span:after {
+  
+	position: absolute;
+	content: '';
+  
+}
+
+.menu span, .menu span:before, .menu span:after {
+  
+	width: 40px;
+	height: 3px;
+	background-color: #a2e7da;
+	display: block;
+  
+}
+
+.menu span:before {
+  
+	margin-top: -12px;
+  
+}
+
+.menu span:after {
+  
+	margin-top: 12px;
+  
+}
+
+
+/* burger-icon */
+.burger-icon span {
+  
+	-webkit-transition: 0.3s ease 0s; 
+  transition: 0.3s ease 0s;
+  
+}
+
+.burger-icon span:before, .burger-icon span:after {
+  
+  -webkit-transition-property: margin, opacity; 
+  transition-property: margin, opacity;
+	-webkit-transition-duration: 0.3s, 0s; 
+  transition-duration: 0.3s, 0s;
+	-webkit-transition-delay: 0.3s; 
+  transition-delay: 0.3s;
+  
+}
+
+.burger-icon:hover span {
+  
+	-webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
+	-webkit-transition-delay: 0.3s; 
+  transition-delay: 0.3s;
+  
+}
+
+.burger-icon:hover span:before, .burger-icon:hover span:after {
+  
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-transition-delay: 0s, .3s; 
+  transition-delay: 0s, .3s;
+  
+}
+
+.menu.clickmenu span {
+  
+	-webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
+  
+}
+
+.menu.clickmenu span:before, 
+.menu.clickmenu span:after {
+  
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
+
+  
+}
+
 
 .boxcarrello{
 	float: right;
