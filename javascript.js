@@ -16,48 +16,52 @@ function svuotaCarrello() {
 }
 
 
-/*menu*/
-var Menu = {
-  el: {
-    menu: $('.menu'),
-    menuTop: $('.menu-top'),
-    menuClose: $('.menu-close'),
-    menuMiddle: $('.menu-middle'),
-    menuBottom: $('.menu-bottom'),
-    menuText: $('.menu-text')
-  },
-  
-  init: function() {
-    Menu.bindUIactions();
-  },
-  
-  bindUIactions: function() {
-    Menu.el.menu
-        .on(
-          'click',
-        function(event) {
-        Menu.activateMenu(event);
-        event.preventDefault();
-      }
-    );
-  },
-  
-  activateMenu: function() {
-    Menu.el.menuTop.toggleClass('menu-top-expand expand');
-    Menu.el.menuMiddle.toggleClass('menu-middle-expand expand');
-    Menu.el.menuBottom.toggleClass('menu-bottom-expand expand'); 
-    Menu.el.menuText.toggleClass('menu-text-expand');
-    Menu.el.menuClose.toggleClass('menu-close-visible');
-  }
-};
-  
-  //Stop menu item click closing the menu
-  $(".menu .menu-global").click(function(e) {
-      e.stopPropagation();
-});
 
-Menu.init();
+// MENU ICON ANIMATION  + MENU LI ANIMATION
 
+
+        $(".burger-icon").click(function(){
+          // Icona chiusa o aperta
+            if($(this).hasClass('clickmenu')) {
+                $(this).removeClass('clickmenu');
+                // comparsa link
+                $.each($('.menu-item'), function(i, el){
+                $(el).css({'opacity':1});
+
+                    setTimeout(function(){
+                      $(el).animate({
+                     'opacity':0
+                        }, 600);
+                     },100 + ( i * 100 ));
+            })
+            }else{       
+               // Icona chiusa o aperta
+                $(this).addClass('clickmenu')
+                // comparsa link
+                $.each($('.menu-item'), function(i, el){
+                $(el).css({'opacity':1});
+
+                     setTimeout(function(){
+                      $(el).animate({
+                     'opacity':1.0
+                        }, 600);
+                     },600 - ( i * 100 ));
+            })
+            }
+
+
+            // voci di menu 
+            if($('.menu-right').hasClass('menu-right-display')) {
+                $('.menu-right').removeClass('menu-right-display')
+                $('.menu-right').addClass('menu-right-close');
+            }else{
+                $('.menu-right').removeClass('menu-right-close');
+                $('.menu-right').addClass('menu-right-display');
+            }
+                
+
+
+            });
 
 
 /*swiper*/
