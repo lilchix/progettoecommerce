@@ -20,48 +20,11 @@ function svuotaCarrello() {
 // MENU ICON ANIMATION  + MENU LI ANIMATION
 
 
-        $(".burger-icon").click(function(){
-          // Icona chiusa o aperta
-            if($(this).hasClass('clickmenu')) {
-                $(this).removeClass('clickmenu');
-                // comparsa link
-                $.each($('.menu-item'), function(i, el){
-                $(el).css({'opacity':1});
-
-                    setTimeout(function(){
-                      $(el).animate({
-                     'opacity':0
-                        }, 600);
-                     },100 + ( i * 100 ));
-            })
-            }else{       
-               // Icona chiusa o aperta
-                $(this).addClass('clickmenu')
-                // comparsa link
-                $.each($('.menu-item'), function(i, el){
-                $(el).css({'opacity':1});
-
-                     setTimeout(function(){
-                      $(el).animate({
-                     'opacity':1.0
-                        }, 600);
-                     },600 - ( i * 100 ));
-            })
-            }
+      //       #2 Burger Menu...
+//codepen.io/victorfreire/pen/BjNveN
 
 
-            // voci di menu 
-            if($('.menu-right').hasClass('menu-right-display')) {
-                $('.menu-right').removeClass('menu-right-display')
-                $('.menu-right').addClass('menu-right-close');
-            }else{
-                $('.menu-right').removeClass('menu-right-close');
-                $('.menu-right').addClass('menu-right-display');
-            }
-                
-
-
-            });
+//https://github.com/VictorFreire/Material-Design-Burger-Menu
 
 
 /*swiper*/
