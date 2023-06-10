@@ -36,24 +36,23 @@
       <div class="container-fluid">
     
    <!-- menu -->    
-    <ul class="menu">
-      <div class="menu-close fa fa-close"></div>
-      <li class="menu-global menu-top">
-        <span class="menu-text">
-          <a class="nav-link" href="aboutus.html">Chi siamo</a>
-        </span>
-      </li>
-      <li class="menu-global menu-middle">
-        <span class="menu-text">
-          <a class="nav-link" href="#personalizzazione">Personalizzazioni</a>
-        </span>
-      </li>
-      <li class="menu-global menu-bottom">
-        <span class="menu-text">
-          <a class="nav-link" href="#contatti">Contatti</a>
-        </span>
-      </li>
+   <div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
     </ul>
+  </nav> 
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
 
    <!-- logo -->
     <center>
