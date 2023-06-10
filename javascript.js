@@ -14,7 +14,12 @@ function svuotaCarrello() {
   var carrello = document.getElementById("carrello");
   carrello.innerHTML = 0;
 }
-
+/*menu*/
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
 /*swiper*/
 var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
