@@ -26,6 +26,7 @@ html, body {
 }
 
 .casella-logo{
+  text-align: center;
   display: inline-block;
   width: 50%;
 }
@@ -133,11 +134,12 @@ body {
   height: 460px;
   transform: translate(-60%,-30%);
 }
-.boxcarrello{
-	float: right;
-	align-content: right;
-	margin-right: 20px;
+.boxcarrello {
+  float: right;
+  align-content: right;
+  margin-right: 20px;
 }
+
 
 /*swiper*/
 
@@ -191,10 +193,12 @@ h1 {
 }
 
 
+
 .btn-primary {
-  background-color:#935931 !important;
-  border-color:none;
+  background-color: #935931 !important;
+  border: none;
 }
+
 
 /*footer*/
 
@@ -222,10 +226,12 @@ h1 {
   vertical-align: top;
 }
 
-#rimandosocial{
-  margin-left:20px ;
-  padding-left:20px
+#rimandosocial {
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 
 .social{
   margin: 10px 30px 10px 0px;
