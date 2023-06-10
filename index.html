@@ -36,15 +36,23 @@
       <div class="container-fluid">
     
   <!-- menu -->    
-<input type="checkbox" id="menu-toggle"/>
-  <label id="trigger" for="menu-toggle"></label>
-  <label id="burger" for="menu-toggle"></label>
-  <ul id="menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+<div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav> 
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
 
 
 
