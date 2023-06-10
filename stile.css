@@ -25,7 +25,7 @@ html, body {
 	width: 100%;
 }
 .casella-logo {
-  align: center;
+  text-align: center;
   display: inline-block;
   width: 50%;
 }
