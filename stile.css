@@ -4,7 +4,7 @@ html, body {
       font-family: 'Poppins', sans-serif;
       font-size: 14px;
       color: #000;
-      background-image: url("immagini/sfondosito.png");
+      background-image: url ("immagini/sfondosito.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -25,9 +25,11 @@ html, body {
 	width: 100%;
 }
 .casella-logo {
-  text-align: center;
+ margin-left:-80px;
+  align-self: center;
+  position: absolute;
   display: inline-block;
-  width: 50%;
+  position:fixed;
 }
 
 .logo {
