@@ -36,20 +36,17 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-    }};
+    });
 
 /*jQuery ready compatto*/
-    $(function
-    ()
-    {
-    $("h1").click(function
-    ()
-    {
+$(function() {
+  $("h1").click(function() {
     $("#prodotto1").slideDown();
     $("#prodotto2").slideDown("slow");
     $("#prodotto3").slideDown(3000);
-    });
-    });
+  });
+});
+
 
 
 
