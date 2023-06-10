@@ -25,11 +25,11 @@ html, body {
 	width: 100%;
 }
 .casella-logo {
- margin-left:-80px;
+ margin-left: 80px;
   align-self: center;
   position: absolute;
   display: inline-block;
-  position:fixed;
+  position: fixed;
 }
 
 .logo {
