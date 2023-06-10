@@ -31,9 +31,10 @@ html, body {
   width: 50%;
 }
 
-.logo{
-  width: 160px;
-  margin-top: 15px;
+.logo {
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
 }
 
 /*menu*/
