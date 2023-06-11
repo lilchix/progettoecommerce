@@ -132,7 +132,7 @@ body {
 .change-bg {
   width: 520px;
   height: 460px;
-  transform: translate(-60%,-30%);
+  transform: translate (-60%,-30%);
 }
 .boxcarrello {
   float: right;
@@ -150,7 +150,7 @@ body {
 }
 
 .swiper-slide {
-  background: #DD925F;
+  background: ##6f1d1b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,11 +170,11 @@ body {
 /*intestazione home*/
 
 h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Oswald', serif;
   text-align: center;
   color: black;
   margin: 40px auto -30px auto;
-  text-shadow: 0px 0px 6px rgba(255,255,255,10);
+  text-shadow: 0px 0px 6px rgba (255,255,255,10);
 }
 
 
@@ -189,13 +189,13 @@ h1 {
   }
 
 .navbar-toggler {
-  background-color: red;
+  background-color: #6f1d1b;
 }
 
 
 
 .btn-primary {
-  background-color: #935931 !important;
+  background-color: #6f1d1b !important;
   border: none;
 }
 
@@ -244,7 +244,7 @@ h1 {
   max-width: 500px;
   font-size: 12px;
   text-align: left;
-  color: #FFE6AE;
+  color: #6f1d1b;
 }
 
 
@@ -264,11 +264,11 @@ h1 {
 }
 
 #intestazione-carrello {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Oswald', serif;
   text-align: center;
   color: black;
   margin: 30px auto;
-  text-shadow: 0px 0px 6px rgba(255,255,255,10);
+  text-shadow: 0px 0px 6px rgba (255,255,255,10);
 }
 
 h2 {
@@ -280,7 +280,7 @@ h2 {
 }
 
 .cart-item {
-  background-color: white;
+  background-color: #6f1d1b;
   padding: 10px;
   margin: 0px auto 10px auto;
   width: 50%;
@@ -297,7 +297,7 @@ h2 {
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #935931;
+  background-color: #6f1d1b;
   color: white;
   border: none;
   cursor: pointer;
@@ -309,5 +309,5 @@ h2 {
   width: 100%;
   height: 10%;
   position: fixed;
-  background-color: #935931;
+  background-color: #6f1d1b;
 }
