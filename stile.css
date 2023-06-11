@@ -22,21 +22,19 @@ html, body {
   background-color:  #6f1d1b;
 }
 .navbar-toggler {
-	width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 Copy code
 .casella-logo {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-  padding: 10px;
+ text-align: center;
 }
 
 .logo {
-  max-width: 30px;
+max-width: 80px; 
   height: auto;
 }
 
