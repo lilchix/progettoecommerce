@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.svg')
+backgroundImage: url('[https://marp.app/assets/hero-background.svg](https://cdn.gelestatic.it/deejay/sites/2/2019/09/Senza-titolo-16.jpg)')
 marp: true
 footer: https://github.com/matteobaccan/CorsoWebDesign
 ---
