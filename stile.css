@@ -25,9 +25,10 @@ html, body {
 	width: 100%;
 }
 
+Copy code
 .casella-logo {
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
@@ -35,7 +36,7 @@ html, body {
 }
 
 .logo {
-  max-width: 100%;
+  max-width: 30px;
   height: auto;
 }
 
