@@ -4,7 +4,7 @@ html, body {
       font-family: 'Oswald';
       font-size: 14px;
       color: #000;
-      background-image: url ("web design/sfondocaffe.jpg");
+      background-image: url("web design/sfondocaffe.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -62,11 +62,11 @@ body {
 }
 
 #bar1 {
-  transform: translateY (-4px);
+  transform: translateY(-4px);
 }
 
 #bar3 {
-  transform: translateY (4px);
+  transform: translateY(4px);
 }
 
 .nav {
@@ -104,7 +104,7 @@ body {
   width: 0;
   height: 0;
   margin: 30px 0 20px 20px;
-  background: radial-gradient (circle, #DC052D, #DC052D);
+  background: radial-gradient(circle, #DC052D, #DC052D);
   border-radius: 50%;
   transition: 0.3s ease;
 }
@@ -118,7 +118,7 @@ body {
 }
 
 .change #bar1 {
-  transform: translateY (4px) rotateZ (-45deg);
+  transform: translateY(4px) rotateZ(-45deg);
 }
 
 .change #bar2 {
@@ -126,13 +126,13 @@ body {
 }
 
 .change #bar3 {
-  transform: translateY (-6px) rotateZ (45deg);
+  transform: translateY(-6px) rotateZ(45deg);
 }
 
 .change-bg {
   width: 520px;
   height: 460px;
-  transform: translate (-60%,-30%);
+  transform: translate(-60%,-30%);
 }
 .boxcarrello {
   float: right;
