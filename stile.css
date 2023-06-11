@@ -24,15 +24,18 @@ html, body {
 .navbar-toggler {
 	width: 100%;
 }
-.casella-logo{
-  display: inline-block;
-  width: 50%;
-}
+.casella-logo {
+      background-color: #f1f1f1;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.logo{
-  width: 160px;
-  margin-top: 15px;
-}
+.logo {
+  max-width: 150px;
+    }
+    
 
 
 /*menu*/
