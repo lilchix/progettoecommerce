@@ -26,8 +26,8 @@ html, body {
 }
 
 .casella-logo{
-  display: inline-block;
-  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .logo{
