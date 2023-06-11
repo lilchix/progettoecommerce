@@ -55,18 +55,18 @@ body {
 .bar {
   height: 5px;
   width: 100%;
-  background-color: white;
+  background-color: red;
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 #bar1 {
-  transform: translateY(-4px);
+  transform: translateY (-4px);
 }
 
 #bar3 {
-  transform: translateY(4px);
+  transform: translateY (4px);
 }
 
 .nav {
