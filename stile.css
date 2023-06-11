@@ -32,10 +32,12 @@ html, body {
       align-items: center;
     }
 
-.logo {
-  max-width: 150px;
-    }
-    
+.logo { 
+    max-width: fit-content;
+    margin: auto;
+    padding: 8px;
+    color: white;
+}
 
 
 /*menu*/
