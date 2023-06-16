@@ -13,8 +13,9 @@ body {
 }
 
 #menu-bar {
-  margin-right: 0;
-  margin-left: 20px; 
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
   cursor: pointer;
 }
 
@@ -135,9 +136,8 @@ body {
 }
 
 .navbar__logo {
+  flex-grow: 1;
   text-align: center;
-  display: block;
-  margin: 0 auto;
 }
 
 .navbar__logo img {
@@ -147,7 +147,6 @@ body {
 .navbar__cart img {
   max-width: 30px;
   margin-right: 80px;
-  margin-lef: 20px;
 }
 
 .btn-primary {
