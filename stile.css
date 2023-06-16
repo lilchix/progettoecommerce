@@ -160,6 +160,8 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
+  text-align: center; 
+  text-color: white;
   background-color: #6F1D1B;
 }
 
