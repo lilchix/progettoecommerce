@@ -171,10 +171,20 @@ footer {
   padding: 20px;
 }
 
-.map-container {
-  margin-bottom: 20px;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.footer-content {
+.contact-info {
+  flex: 1;
   text-align: center;
 }
+
+.map-container {
+  flex: 1;
+}
+
