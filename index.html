@@ -1,196 +1,75 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-  <meta name="description" content="e-commerce di caffettiere">
-  <meta name="keywords" content="web, web design, accademia, dolci, e-commerce, sito, carrello, compra, personalizza">
-  
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La mia pagina Bootstrap</title>
+ 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-  <!-- Link icone google -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- Link icone Awesome 4 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Link per il font h1 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <!-- Link per jquery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- Link file MIO css -->
-  <link rel="stylesheet" href="stile.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="stile.css" />
 </head>
-  
-  
 <body>
-  <!-- head line -->
   <header>
-    <div class="headline">
-      <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-    
-  <!-- menu -->    
-<div id="menu">
-  <div id="menu-bar" onclick="menuOnClick()">
-    <div id="bar1" class="bar"></div>
-    <div id="bar2" class="bar"></div>
-    <div id="bar3" class="bar"></div>
-  </div>
-  <nav class="nav" id="nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-  </nav> 
-</div>
-
-<div class="menu-bg" id="menu-bg"></div>
-
-
-
-   <!-- logo -->
- <center>
-     <div class="casella-logo">
-        <a href="index.html">
-            <img class="logo" src="web design/Tavola disegno 1.png">
+    <div class="navbar">
+      <div class="navbar__logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="navbar__cart">
+        <a href="#">
+          <img src="icona carrello bianco.png" alt="Carrello">
         </a>
-     </div>
-    </center>
-</header>
-
-   <!-- carrello -->
-     <div class="boxcarrello">
-        <a href="carrello.html"><i class="fa fa-shopping-cart" style="font-size:25px; color: white;"></i> <span style="font-size: 20px;  padding: 4px;  color:white" id="carrello">0</span></a>
-     </div>
-   
       </div>
-      </nav>
+    </div>
+
+    <!-- menu -->
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav> 
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+
   </header>
-
-
-  <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://img.freepik.com/premium-photo/moka-pot-espresso-machine-stove_46527-752.jpg">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.advister.it/wp-content/uploads/2018/11/regali-originali-caffettiere.jpg">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.migliorisotto100euro.com/wp-content/uploads/2021/11/migliori-moka-induzione.jpg">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.habitante.it/wp-content/uploads/2021/04/moka-bialetti.jpg">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://casucciamia.com/wp-content/uploads/2022/04/moka-pot-steam.jpg">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.puglia24news.it/wp-content/uploads/2020/08/mokapot-featured-L.jpg"> 
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <h1>Buongiornissimo, kaffeeeee?</h1>
   
-  <!-- contenitori -->  
-    
-    <main class="container my-5">
-        
-        <div id="box-prodotti">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-
-            <div class="col">
-              <div id="prodotto1">
-                <div class="card h-100">
-                    <img src="https://artigianato-italia.it/3551-large_default/caffettiera-espresso-classica.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><b>mOKa CLASSICA</b></h4>
-                        <p class="card-text">mOKa personalizzabile</p>
-                        <p class="card-text"><strong>Prezzo:</strong> da €25</p>
-                        <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
-                        <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi al carrello</a>
-                    </div>                    
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div id="prodotto2">
-                <div class="card h-100">
-                    <img src="https://buonitaly.it/1531994-large_default/16088-bialetti-4642-caffettiera-class-da-4-tazze-acciaio-inossidabile-argento-6-unit.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><b>mOKa DA 4</b></h4>
-                        <p class="card-text">mOKa personalizzabile</p>
-                        <p class="card-text"><strong>Prezzo:</strong> da €25</p>
-                        <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
-                        <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi al carrello</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div id="prodotto3">
-                <div class="card h-100">
-                    <img src="https://www.casadelcaffe.eu/642-home_default/mini-express-bialetti-caffettiera-2tz.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><b>mOKa doppia</b></h4>
-                        <p class="card-text">mOKa personalizzabile</p>
-                        <p class="card-text"><strong>Prezzo:</strong> da €30</p>
-                        <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
-                        <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi al carrello</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            
-        </div>
-        </div>
-    </main>
-
-  <!-- footer --> 
-    <footer class="footer">
-      <div class="container text-center">
-        
-        <div class="fot">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2798.854587066455!2d8.6137757!3d45.4525863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a24573b9d29%3A0x5064224377bd31e3!2sVia%20Costantino%20Porta%2C%2025%2C%2028100%20Novara%20NO!5e0!3m2!1sen!2sit!4v1654440794287!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-        </div> 
-        
-        <div class="fot">
-          <p id="testofooter">
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">location_on</i>  Novara (Italy), via C. Porta 25<br>
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">call</i>  (+39) 0321.627101 / 628381 <br>
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">email</i>  moka@gmail.com <br>
-            <br>
-            mOKa srl<br>
-            © Sella srl - PI 01176320032
-          </p>
-        </div>
-
-        <div class="fot">
-          <div id="rimandosocial">
-            <h4 style="text-align:center;">Prendi un caffè con noi<br>seguici sui social!</h4>
-            <a href="https://www.instagram.com/acmenovaraaccademia/" class="social"><i class="fa fa-instagram" style="font-size:35px; color: white;"></i></a>
-            <a href="https://www.facebook.com/ACMEaccademiaNovara/"  class="social"><i class="fa fa-facebook-f" style="font-size:35px; color: white;"></i></a>
-          </div>
-        </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://www.commasas.it/images/arredamenti-e-mobili-01.jpg" alt="Immagine 1">
       </div>
-    </footer>
+      <div class="swiper-slide">
+        <img src="https://aostasera.it/wp-content/uploads/2021/12/Spazio-2000-arredamenti2.jpg" alt="Immagine 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://scavolini-cdn.thron.com/delivery/public/image/scavolini/e3654440-ed2c-429e-8704-c11a33f8ef80/nuctwf/std/700x0/AQUO_pag_34_35.jpg" alt="Immagine 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://pensarecasa.it/wp-content/uploads/2023/02/Notte-camera-da-letto-moderna.jpg" alt="Immagine 4">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
-  <!-- Swiper JS -->
+  <!--Square-->
+  <div class="square">
+  <textarea placeholder="Scrivi qui..." rows="4" cols="50"></textarea>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-<script src="javascript.js"> </script>
+  <script src="javascript.js"></script>
 </body>
-</html> 
+</html>
