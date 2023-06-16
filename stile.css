@@ -141,12 +141,12 @@ body {
 }
 
 .navbar__logo img {
-  max-width: 100px;
+  max-width: 130px;
 }
 
 .navbar__cart img {
   max-width: 30px;
-  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .btn-primary {
