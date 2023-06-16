@@ -13,10 +13,8 @@ body {
 }
 
 #menu-bar {
-  width: 45px;
-  height: 40px;
   margin-right: 0;
-  margin-left: 20px;
+  margin-left: 20px; 
   cursor: pointer;
 }
 
