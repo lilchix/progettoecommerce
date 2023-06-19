@@ -1,126 +1,138 @@
 <!DOCTYPE html>
+<!-- ChatGPT: mi scrivi una pagina di carrello con bootstrap5 -->
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-  <meta name="description" content="sito di e-commerce di dolci per l'esame di fine anno di web design">
-  <meta name="keywords" content="web, web design, accademia, dolci, e-commerce, sito, carrello, compra, personalizza">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrello</title>
+    <!-- Collegamento ai file CSS di Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+  </head>
   
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-  <!-- Link icone bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- Link icone google -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- Link icone Awesome 4 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Link file MIO css -->
-  <link rel="stylesheet" href="stile.css">
-  <!-- Link per il font h1 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <!-- Link per jquery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-</head>
-  
-  
-<body>
-  <!-- head line -->
-  <header>
-    <div class="headline-carrello">
-      <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-    
-   <!-- menu -->    
-   <div id="menu">
-  <div id="menu-bar" onclick="menuOnClick()">
-    <div id="bar1" class="bar"></div>
-    <div id="bar2" class="bar"></div>
-    <div id="bar3" class="bar"></div>
-  </div>
-  <nav class="nav" id="nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-  </nav> 
-</div>
 
-<div class="menu-bg" id="menu-bg"></div>
-
-   <!-- logo -->
-    <center>
-     <div class="casella-logo">
-        <a href="index.html">
-            <img class="logo" src="web design/Tavola disegno 1.png">
-        </a>
-     </div>
-    </center>
-
-   <!-- carrello -->
-    <div class="boxcarrello">
-      
-    </div>
-   
-      </div>
-      </nav>
-    </div>
-  </header>
-
-   <div id="spazio-vuoto">
-   </div>
- 
-  <!-- carrello -->
-    <h1 id="intestazione-carrello">Pronti per l’acquisto:</h1>
-  
-    <div id="cart-items">
-  <!-- Gli elementi del carrello saranno generati dinamicamente qui -->
-    </div>
- 
-    <h2>Totale: <span id="cart-total">$0.00</span></h2>
- 
-    <button id="checkout-btn">Checkout</button>    
-
-
-
-  <!-- footer --> 
-    <footer class="footer">
-      <div class="container text-center">
-        
-        <div class="fot">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2798.854587066455!2d8.6137757!3d45.4525863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a24573b9d29%3A0x5064224377bd31e3!2sVia%20Costantino%20Porta%2C%2025%2C%2028100%20Novara%20NO!5e0!3m2!1sen!2sit!4v1654440794287!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-        </div> 
-        
-        <div class="fot">
-          <p id="testofooter">
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">location_on</i>  Novara (Italy), via C. Porta 25<br>
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">call</i>  (+39) 0321.627101 / 628381 <br>
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">email</i>  dolcinicakelab@gmail.it<br>
-            <br>
-            DOLCINI cake lab srl<br>
-            © Sella srl - PI 01176320032
-          </p>
-        </div>
-
-        <div class="fot">
-          <div id="rimandosocial">
-            <h4 style="text-align:center;">Resta aggiornato sulle nostre novità,<br>seguici anche sui social!</h4>
-            <a href="https://www.instagram.com/acmenovaraaccademia/" class="social"><i class="fa fa-instagram" style="font-size:35px; color: white;"></i></a>
-            <a href="https://www.facebook.com/ACMEaccademiaNovara/"  class="social"><i class="fa fa-facebook-f" style="font-size:35px; color: white;"></i></a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Il mio sito</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="prodotti.html">Prodotti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrello.html">Carrello</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contatti</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </footer>
+      </nav>
+    </header>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <script src="javascript.js"> </script>
-</body>
-</html> 
+    <main class="container my-5">
+      <h1 class="mb-4">Carrello</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Prodotto</th>
+            <th scope="col">Prezzo</th>
+            <th scope="col">Quantità</th>
+            <th scope="col">Totale</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Nome prodotto 1</td>
+            <td>€XX,XX</td>
+            <td>
+              <input type="number" class="form-control" min="1" value="1" />
+            </td>
+            <td>€XX,XX</td>
+            <td>
+              <button class="btn btn-danger btn-sm">
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Nome prodotto 2.</td>
+            <td>€XX,XX</td>
+            <td>
+              <input type="number" class="form-control" min="1" value="1" />
+            </td>
+            <td>€XX,XX</td>
+            <td>
+              <button class="btn btn-danger btn-sm">
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Nome prodotto 3</td>
+            <td>€XX,XX</td>
+            <td>
+              <input type="number" class="form-control" min="1" value="1" />
+            </td>
+            <td>€XX,XX</td>
+            <td>
+              <button class="btn btn-danger btn-sm">
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row justify-content-end">
+        <div class="col-lg-4">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Totale prodotti:</th>
+                <td>€XX,XX</td>
+              </tr>
+              <tr>
+                <th scope="row">Costi di spedizione:</th>
+                <td>€XX,XX</td>
+              </tr>
+              <tr>
+                <th scope="row">Totale:</th>
+                <td>€XX,XX</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary w-100">Procedi al pagamento</a>
+        </div>
+      </div>
+    </main>
+    <!-- Collegamento ai file JavaScript di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
