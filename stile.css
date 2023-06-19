@@ -153,8 +153,8 @@ body {
 }
 
 .btn-primary {
-  background-color: #8b4513 !important;
-  border-color: #8b4513 !important;
+  background-color: #6F1D1B !important;
+  border-color: #6F1D1B !important;
 }
 
 #col-5 {
@@ -200,14 +200,16 @@ body {
 }
 
 footer {
-  background-color: #f2f2f2;
+  background-color: #6F1D1B;
   padding: 20px;
   text-align: center;
+  text-color: white;
 }
 
 .footer-container {
   max-width: 960px;
   margin: 0 auto;
+   text-color: white;
 }
 
 .contact-info {
