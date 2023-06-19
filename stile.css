@@ -209,12 +209,13 @@ footer {
 .footer-container {
   max-width: 960px;
   margin: 0 auto;
-  text-color: white;
   font-family: Owsald;
 }
 
 .contact-info {
   margin-top: 20px;
+    text-color: white;
+  font-family: Owsald;
 }
 
 .location,
