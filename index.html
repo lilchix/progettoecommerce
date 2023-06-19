@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La mia pagina Bootstrap</title>
+  <title>mOKa</title>
  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="stile.css" />
 </head>
 <body>
-  <header>
+<header>
     <div class="navbar">
       <div class="navbar__logo">
         <img src="web design/Tavola disegno 1.png" alt="Logo">
@@ -32,9 +34,8 @@
       <nav class="nav" id="nav">
         <ul>
           <li><a href="#">Home</a></li>
+          <li><a href="#">Personalizzazione</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
         </ul>
       </nav> 
     </div>
@@ -42,115 +43,127 @@
     <div class="menu-bg" id="menu-bg"></div>
 
   </header>
-  
+      
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="https://www.myspresso.it/wp-content/uploads/2016/06/best-top-desktop-coffee-wallpapers-hd-coffee-wallpaper-pictures-backgrounds-01.jpg" alt="Immagine 1">
+        <img src="https://media-assets.lacucinaitaliana.it/photos/620b62896027ece36cbf2446/16:9/w_2560%2Cc_limit/Caffe-1.jpg">
       </div>
       <div class="swiper-slide">
-        <img src="https://www.shutterstock.com/image-photo/coffee-beans-moka-pot-smoke-260nw-1223286571.jpg" alt="Immagine 2">
+        <img src="https://inchiostrovirtuale.it/wp-content/uploads/2018/09/caff%C3%A8-espresso.jpg">
       </div>
       <div class="swiper-slide">
-        <img src="https://img.freepik.com/premium-photo/pouring-coffee-from-moka-pot_28943-636.jpg" alt="Immagine 3">
+        <img src="https://datacenter-a3.vudoo.org/390100/fotogallery/1/O_14533.jpg">
       </div>
       <div class="swiper-slide">
-        <img src="https://c0.wallpaperflare.com/preview/579/52/860/coffee-caffeine-cafe-latte.jpg" alt="Immagine 4">
+        <img src="https://www.fondazioneveronesi.it/uploads/2019/05/09/caffe_1.jpg">
       </div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
-<br>
-  <br>
- <div class="container">
-  <h1>Buongiornissimo, kaffèèè??!</h1>
-  <p>Contenuto del container...</p>
-</div>
+    
+  <div class="space"></div>
 
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="javascript.js"></script>
-
-   <div class="titolo">
-    <h2> I nostri prodotti </h2>
+  <div class="container">
+    <div id="aboutus" class="row">
+      <div id="col-5" class="col"> 
+        <h1 id="scopri">Buogiornissimo <br>
+         kaffeeeeeeeeeeeee??!!?</h1>
+        <br>
+        <br>
+        <h4>Il caffè è la nostra passione e la personalizzazione è il nostro mantra! Da "Caffè Creativo" creiamo caffettiere su misura che riflettono il vostro stile unico. Dalle combinazioni di colori stravaganti ai dettagli sorprendenti, ogni caffettiera è un'opera d'arte personalizzata. Deliziare i vostri sensi con caffè unico nel suo genere non è mai stato così divertente. Unitevi a noi e scoprite l'arte di gustare un caffè che parla della vostra individualità.</h4>
+        <br>
+        <br>
+        <a href="chisiamo.html" class="btn btn-primary">About us</a>
+      </div>
+    </div>
   </div>
 
+  <div class="space"></div>
 
+  <div class="titolo">
+    <h2>I nostri prodotti</h2>
+  </div>
 
   <main class="container my-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
-              <a href="prodotto.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Moka_Express_Bialetti.png" class="card-img-top" alt="...">
-              </a>
-                <div class="card-body">
-                    <h5 class="card-title">mOka classica</h5>
-                    <p class="card-text">mOka classica per un caffè classico</p>
-                    <p class="card-text"><strong>Prezzo:</strong> €24,99</p>
-                    <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
-                    <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi
-                     </a>
-                </div>                    
-            </div>
+      <div class="col">
+        <div class="card h-100">
+          <a href="prodotto.html">
+            <img src="https://static.tikamoon.com/product_photos/2196__HD_003/1200-1200-mobile-da-bagno-in-teak-massello-kwarto-110-cm.jpg?t=1665644479" class="card-img-top" alt="...">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Prodotto 1</h5>
+            <p class="card-text">Descrizione prodotto 1.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €99,99</p>
+            <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
+            <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi</a>
+          </div>                    
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://m.media-amazon.com/images/I/51jTAyJzQuL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">mOKa doppia</h5>
-                    <p class="card-text">mOka doppia per un caffè d'amore</p>
-                    <p class="card-text"><strong>Prezzo:</strong> €34,99</p>
-                   <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
-                    <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi
-                     </a>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://static.tikamoon.com/product_photos/3426_Z_HD_002/1200-1200-mobile-da-bagno-in-teak-massello-romeo-60-cm.jpg?t=1669643654" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Prodotto 2</h5>
+            <p class="card-text">Descrizione prodotto 2.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €79,99</p>
+            <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
+            <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi</a>
+          </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://www.salernocasalinghi.it/21487-thickbox_default/bialetti-caffettiera-moka-in-acciaio-musa-1-tazza-no-induzione.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">mOka da 6</h5>
-                    <p class="card-text">mOka da sei persone per gustare il tuo caffè in compagnia</p>
-                    <p class="card-text"><strong>Prezzo:</strong> €24,99</p>
-                    <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
-                    <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi
-                     </a>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://static.tikamoon.com/product_photos/4811__HD_003/1200-1200-mobile-per-il-bagno-in-palissandro-massello-kwarto-60-cm.jpg?t=1665737147" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Prodotto 3</h5>
+            <p class="card-text">Descrizione prodotto 3.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €129,99</p>
+            <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
+            <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi</a>
+          </div>
         </div>
+      </div>
     </div>
+  </main>
   
-  
-
-    </div>
-</main>
 <footer>
-  <div class="footer-content">
-    <div class="contact-info">
-      <p>Informazioni di contatto:</p>
-      <p>Indirizzo: Via Costantino Porta, 25</p>
-      <p>Email: moka@gmail.com</p>
-      <p>Telefono: 032145864</p>
-      <p>Prendi un caffè con noi, seguici sui nostri social!</p>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Prodotti</a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+      </div>
     </div>
-    <div class="social-media">
-      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    </div>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.854198276924!2d8.61340627529742!3d45.45259413421445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a24573b9d29%3A0x5064224377bd31e3!2sVia%20Costantino%20Porta%2C%2025%2C%2028100%20Novara%20NO!5e0!3m2!1sit!2sit!4v1686926772118!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>></iframe>
+    <div class="footer-bottom">
+      <p>Tutti i diritti riservati &copy; 2023</p>
     </div>
   </div>
 </footer>
 
 
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="javascript.js"></script>
 </body>
 </html>
