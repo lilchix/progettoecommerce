@@ -210,22 +210,12 @@ footer {
   margin: 0 auto;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
+.contact-info {
+  margin-top: 20px;
 }
 
-.footer-links li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.footer-links li a {
-  color: #555555;
-  text-decoration: none;
-}
-
-.footer-links li a:hover {
-  color: #000000;
+.location,
+.phone,
+.email {
+  margin-bottom: 10px;
 }
