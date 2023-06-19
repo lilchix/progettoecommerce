@@ -203,13 +203,14 @@ footer {
   background-color: #6F1D1B;
   padding: 20px;
   text-align: center;
-  text-color: white;
-  font-family: Owsald;
+
 }
 
 .footer-container {
   max-width: 960px;
   margin: 0 auto;
+  text-color: white;
+  font-family: Owsald;
 }
 
 .contact-info {
