@@ -189,3 +189,108 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Featured Products */
+.products {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFF;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.product-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #FFCD9C;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #FFCD9C;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.newsletter-title {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.newsletter-button {
+    background-color: #935931;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background-color: #FFCD9C;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #FFCD9C;
+}
