@@ -144,6 +144,11 @@ html, body {
     .menu {
         font-size: 0.8em;
     }
+.fixed-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
 }
 
 .boxcarrello {
