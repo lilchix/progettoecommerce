@@ -39,31 +39,41 @@
         }
 
         /* menu */
-        var theToggle = document.getElementById('toggle');
+     var theToggle = document.getElementById('toggle');
+var menu = document.getElementById('menu'); // Assicurati di utilizzare l'ID corretto del tuo menu
 
-        // based on Todd Motto functions
-        // https://toddmotto.com/labs/reusable-js/
+theToggle.onclick = function() {
+    menu.classList.toggle('fixed-menu'); // Aggiunge o rimuove la classe 'fixed-menu'
+    toggleClass(this, 'on');
+    return false;
+}
+
+       
 
         // hasClass
         function hasClass(elem, className) {
             return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
         }
-        // addClass
-        function addClass(elem, className) {
-            if (!hasClass(elem, className)) {
-                elem.className += ' ' + className;
-            }
-        }
-        // removeClass
-        function removeClass(elem, className) {
-            var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
-            if (hasClass(elem, className)) {
-                while (newClass.indexOf(' ' + className + ' ') >= 0) {
-                    newClass = newClass.replace(' ' + className + ' ', ' ');
-                }
-                elem.className = newClass.replace(/^\s+|\s+$/g, '');
-            }
-        }
+       // Funzione per aggiungere una classe
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+        elem.classList.add(className);
+    }
+}
+
+// Funzione per rimuovere una classe
+function removeClass(elem, className) {
+    elem.classList.remove(className);
+}
+
+// Funzione per verificare se un elemento ha una classe
+function hasClass(elem, className) {
+    return elem.classList.contains(className);
+}
+
+
+
+
         // toggleClass
         function toggleClass(elem, className) {
             var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
