@@ -17,55 +17,48 @@ function svuotaCarrello() {
 
 
 /*menu*/
-"use strict"; 
+var theToggle = document.getElementById('toggle');
 
-const body = document.body;
-const bgColorsBody = ["#ffb457", "#ff96bd", "#9999fb", "#ffe797", "#cffff1"];
-const menu = body.querySelector(".menu");
-const menuItems = menu.querySelectorAll(".menu__item");
-const menuBorder = menu.querySelector(".menu__border");
-let activeItem = menu.querySelector(".active");
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
 
-function clickItem(item, index) {
-
-    menu.style.removeProperty("--timeOut");
-    
-    if (activeItem == item) return;
-    
-    if (activeItem) {
-        activeItem.classList.remove("active");
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
     }
-
-    
-    item.classList.add("active");
-    body.style.backgroundColor = bgColorsBody[index];
-    activeItem = item;
-    offsetMenuBorder(activeItem, menuBorder);
-    
-    
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
 }
 
-function offsetMenuBorder(element, menuBorder) {
-
-    const offsetActiveItem = element.getBoundingClientRect();
-    const left = Math.floor(offsetActiveItem.left - menu.offsetLeft - (menuBorder.offsetWidth  - offsetActiveItem.width) / 2) +  "px";
-    menuBorder.style.transform = `translate3d(${left}, 0 , 0)`;
-
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
 }
-
-offsetMenuBorder(activeItem, menuBorder);
-
-menuItems.forEach((item, index) => {
-
-    item.addEventListener("click", () => clickItem(item, index));
-    
-})
-
-window.addEventListener("resize", () => {
-    offsetMenuBorder(activeItem, menuBorder);
-    menu.style.setProperty("--timeOut", "none");
-});
-
 
 
 /*swiper*/
