@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Tuo Sito</title>
-    <link rel="stylesheet" href="stile.css"> <!-- Assicurati di includere il tuo foglio di stile CSS -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  <meta name="description" content="sito di e-commerce di dolci per l'esame di fine anno di web design">
+  <meta name="keywords" content="web, web design, accademia, dolci, e-commerce, sito, carrello, compra, personalizza">
+  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <!-- Link icone bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Link icone google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Link icone Awesome 4 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Link file MIO css -->
+  <link rel="stylesheet" href="stile.css">
+  <!-- Link per il font h1 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <!-- Link per jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
+  
+  
 <body>
-    <!-- Nuovo menu -->
-    <div class="menu">
-        <div class="menu-text">
-            <span class="menu-global menu-top"></span>
-            <span class="menu-global menu-middle"></span>
-            <span class="menu-global menu-bottom"></span>
-        </div>
-    </div>
-
-    <div class="menu-expand">
-        <div class="menu-text-expand">
-            <span class="menu-global menu-top-expand"></span>
-            <span class="menu-global menu-middle-expand"></span>
-            <span class="menu-global menu-bottom-expand"></span>
-        </div>
-    </div>
-
-    <div class="menu-close"></div>
-
-    <ul class="menu-expand">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- head line -->
+  <header>
+    <div class="headline">
+      <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+    
+   <!-- menu -->    
+    <ul class="menu">
+      <div class="menu-close fa fa-close"></div>
+      <li class="menu-global menu-top">
+        <span class="menu-text">
+          <a class="nav-link" href="aboutus.html">Chi siamo</a>
+        </span>
+      </li>
+      <li class="menu-global menu-middle">
+        <span class="menu-text">
+          <a class="nav-link" href="carrello.html">Carrello</a>
+        </span>
+      </li>
+      <li class="menu-global menu-bottom">
+        <span class="menu-text">
+          <a class="nav-link" href="#testofooter">Contatti</a>
+        </span>
+      </li>
     </ul>
 
-    <!-- Rimuovi il menu precedente e integra il resto del tuo contenuto -->
-    
-    <div class="container">
    <!-- logo -->
     <center>
      <div class="casella-logo">
@@ -181,10 +199,9 @@
       </div>
     </footer>
 
-    </div>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script> 
+  <script src="javascript.js"> </script>
 </body>
-</html>
+</html> 
