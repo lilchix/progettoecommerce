@@ -17,46 +17,54 @@ function svuotaCarrello() {
 
 
 /*menu*/
-var Menu = {
-  el: {
-    menu: $('.menu'),
-    menuTop: $('.menu-top'),
-    menuClose: $('.menu-close'),
-    menuMiddle: $('.menu-middle'),
-    menuBottom: $('.menu-bottom'),
-    menuText: $('.menu-text')
-  },
-  
-  init: function() {
-    Menu.bindUIactions();
-  },
-  
-  bindUIactions: function() {
-    Menu.el.menu
-        .on(
-          'click',
-        function(event) {
-        Menu.activateMenu(event);
-        event.preventDefault();
-      }
-    );
-  },
-  
-  activateMenu: function() {
-    Menu.el.menuTop.toggleClass('menu-top-expand expand');
-    Menu.el.menuMiddle.toggleClass('menu-middle-expand expand');
-    Menu.el.menuBottom.toggleClass('menu-bottom-expand expand'); 
-    Menu.el.menuText.toggleClass('menu-text-expand');
-    Menu.el.menuClose.toggleClass('menu-close-visible');
-  }
-};
-  
-  //Stop menu item click closing the menu
-  $(".menu .menu-global").click(function(e) {
-      e.stopPropagation();
-});
+"use strict"; 
 
-Menu.init();
+const body = document.body;
+const bgColorsBody = ["#ffb457", "#ff96bd", "#9999fb", "#ffe797", "#cffff1"];
+const menu = body.querySelector(".menu");
+const menuItems = menu.querySelectorAll(".menu__item");
+const menuBorder = menu.querySelector(".menu__border");
+let activeItem = menu.querySelector(".active");
+
+function clickItem(item, index) {
+
+    menu.style.removeProperty("--timeOut");
+    
+    if (activeItem == item) return;
+    
+    if (activeItem) {
+        activeItem.classList.remove("active");
+    }
+
+    
+    item.classList.add("active");
+    body.style.backgroundColor = bgColorsBody[index];
+    activeItem = item;
+    offsetMenuBorder(activeItem, menuBorder);
+    
+    
+}
+
+function offsetMenuBorder(element, menuBorder) {
+
+    const offsetActiveItem = element.getBoundingClientRect();
+    const left = Math.floor(offsetActiveItem.left - menu.offsetLeft - (menuBorder.offsetWidth  - offsetActiveItem.width) / 2) +  "px";
+    menuBorder.style.transform = `translate3d(${left}, 0 , 0)`;
+
+}
+
+offsetMenuBorder(activeItem, menuBorder);
+
+menuItems.forEach((item, index) => {
+
+    item.addEventListener("click", () => clickItem(item, index));
+    
+})
+
+window.addEventListener("resize", () => {
+    offsetMenuBorder(activeItem, menuBorder);
+    menu.style.setProperty("--timeOut", "none");
+});
 
 
 
