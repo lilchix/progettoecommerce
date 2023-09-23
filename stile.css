@@ -1,392 +1,119 @@
-/* Reset del CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il tuo Sito Web</title>
+  <link rel="stylesheet" href="style.css"> <!-- Assicurati di avere un file style.css con i tuoi stili personalizzati -->
+  <!-- Collegamento alle librerie CSS e JavaScript necessarie per il menu -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.8.4/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <!-- Header con menu -->
+  <header>
+    <div class="headline" id="headline">
+      <!-- Aggiungi qui il tuo logo -->
+      <div class="casella-logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <!-- Icona del menu -->
+      <div class="menu" id="menu">
+        <div class="menu-top menu-global"></div>
+        <div class="menu-middle menu-global"></div>
+        <div class="menu-bottom menu-global"></div>
+        <div class="menu-text">Menu</div>
+      </div>
+    </div>
+    <!-- Menu di navigazione -->
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Prodotti</a></li>
+        <li><a href="#">Chi Siamo</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* Font e background globali */
-html, body {
-    position: relative;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #000;
-    background-image: url("img/sfondosito.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
+  <!-- Banner con immagini in slider -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/slide1.jpg" alt="Immagine 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slide2.jpg" alt="Immagine 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slide3.jpg" alt="Immagine 3">
+      </div>
+    </div>
+    <!-- Punti di navigazione del banner -->
+    <div class="swiper-pagination"></div>
+  </div>
 
-/* Header */
-.headline {
-    z-index: 3;
-    padding: 10px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    margin: 0;
-    background-color: #935931;
-}
+  <!-- Contenuto principale -->
+  <div class="container">
+    <h1>Benvenuti nel nostro sito!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <!-- Aggiungi qui il resto del contenuto principale -->
+  </div>
 
-.navbar-toggler {
-    width: 100%;
-}
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="contatti-social">
+      <!-- Aggiungi qui i tuoi contatti e link ai social -->
+      <div id="map">
+        <!-- Mappa di Google Maps -->
+        <!-- Sostituisci "la_tua_chiave_api" con la tua chiave API di Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.010585704274!2d-122.08505178462218!3d37.42199927983178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858089a13d697b%3A0x4e6b671b08c7a3b6!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1610526418481!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="fot">
+      <h4>Link utili</h4>
+      <ul>
+        <li><a href="#">Termini e condizioni</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="fot">
+      <h4>Seguici su</h4>
+      <!-- Aggiungi qui i tuoi link ai social -->
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="fot">
+      <p id="testofooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+  </footer>
 
-.navbar {
-    margin-bottom: 0;
-}
+  <!-- Codice JavaScript per il menu -->
+  <script>
+    const menuButton = document.getElementById('menu');
+    const menu = document.getElementById('navbar');
 
-.casella-logo {
-    display: inline-block;
-    /*width: auto%;*/
-}
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
 
-.logo {
-    width: 160px;
-    /*margin-top: ;*/
-}
-
-/* Menu */
-:root {
-    --bgColorMenu: #1d1d27;
-    --duration: 0.7s;
-}
-
-.menu {
-    margin: 0;
-    display: flex;
-    width: 32.05em;
-    font-size: 1.5em;
-    padding: 0 2.85em;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bgColorMenu);
-}
-
-.menu__item {
-    all: unset;
-    flex-grow: 1;
-    z-index: 100;
-    display: flex;
-    cursor: pointer;
-    position: relative;
-    border-radius: 50%;
-    align-items: center;
-    will-change: transform;
-    justify-content: center;
-    padding: 0.55em 0 0.85em;
-    transition: transform var(--timeOut, var(--duration));
-}
-
-.menu__item::before {
-    content: "";
-    z-index: -1;
-    width: 4.2em;
-    height: 4.2em;
-    border-radius: 50%;
-    position: absolute;
-    transform: scale(0);
-    transition: background-color var(--duration), transform var(--duration);
-}
-
-.menu__item.active {
-    transform: translate3d(0, -0.8em, 0);
-}
-
-.menu__item.active::before {
-    transform: scale(1);
-    background-color: var(--bgColorItem); /* Assicurati di definire questa variabile */
-}
-
-.icon {
-    width: 2.6em;
-    height: 2.6em;
-    stroke: white;
-    fill: transparent;
-    stroke-width: 1pt;
-    stroke-miterlimit: 10;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 400;
-}
-
-.menu__item.active .icon {
-    animation: strok 1.5s reverse;
-}
-
-@keyframes strok {
-    100% {
-        stroke-dashoffset: 400;
-    }
-}
-
-.menu__border {
-    left: 0;
-    bottom: 99%;
-    width: 10.9em;
-    height: 2.4em;
-    position: absolute;
-    clip-path: url(#menu);
-    will-change: transform;
-    background-color: var(--bgColorMenu);
-    transition: transform var(--timeOut, var(--duration));
-}
-
-.svg-container {
-    width: 0;
-    height: 0;
-}
-
-@media screen and (max-width: 50em) {
-    .menu {
-        font-size: 0.8em;
-    }
-    .fixed-menu {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-    }
-}
-
-.boxcarrello {
-    float: right;
-}
-
-/* Swiper */
-.swiper {
-    width: 100%;
-    height: 85%;
-}
-
-.swiper-slide {
-    background: #DD925F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-pagination {
-    align-items: center;
-}
-
-/* Intestazione home */
-#ancora {
-    height: 8%;
-    margin-top: -60px;
-}
-
-h1 {
-    font-family: 'DM Serif Display', serif;
-    text-align: center;
-    color: black;
-    margin: 40px auto -30px auto;
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 10);
-    padding: 30px;
-}
-
-/* Box prodotti */
-#box-prodotti {
-    margin: 3% auto;
-}
-
-p.card-text {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.card-img-top:hover {
-    opacity: 0.5;
-    box-shadow: 0px 0px 40px #935931;
-}
-
-.navbar-toggler {
-    background-color: red;
-}
-
-.btn-primary {
-    background-color: #935931 !important;
-    border: none;
-}
-
-/* Footer */
-.footer {
-    background-color: #935931;
-    color: white;
-    padding: 10px;
-}
-
-.contatti-social {
-    display: inline-block;
-    margin: 0px 30px;
-}
-
-#map {
-    width: auto;
-    height: 150px;
-    margin-right: 40px;
-}
-
-.fot {
-    display: inline-block;
-    margin: 10px auto;
-    vertical-align: top;
-}
-
-#rimandosocial {
-    margin-left: 20px;
-    padding-left: 20px;
-}
-
-.social {
-    margin: 10px 30px 10px 0px;
-    display: inline-block;
-    color: white;
-}
-
-#testofooter {
-    max-width: 500px;
-    font-size: 12px;
-    text-align: left;
-    color: #FFE6AE;
-}
-
-@media screen and (max-width: 1200px) {
-    .logo {
-        width: 100px;
-    }
-}
-
-/* Menu mobile */
-#toggle {
-    display: block;
-    width: 28px;
-    height: 30px;
-    margin: 30px auto 10px;
-}
-
-#toggle span:after,
-#toggle span:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -9px;
-}
-
-#toggle span:after {
-    top: 9px;
-}
-
-#toggle span {
-    position: relative;
-    display: block;
-}
-
-#toggle span,
-#toggle span:after,
-#toggle span:before {
-    width: 100%;
-    height: 5px;
-    background-color: #888;
-    transition: all 0.3s;
-    backface-visibility: hidden;
-    border-radius: 2px;
-}
-
-/* Sul click del toggle */
-#toggle.on span {
-    background-color: transparent;
-}
-
-#toggle.on span:before {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-#toggle.on span:after {
-    transform: rotate(-45deg) translate(7px, -8px);
-}
-
-.menu-overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    visibility: hidden;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: opacity 0.3s, visibility 0s linear 0.3s;
-}
-
-.menu-active .menu-overlay {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.3s, visibility 0s;
-}
-
-.menu__mobile {
-    position: fixed;
-    width: 70%;
-    height: 100%;
-    background-color: #1d1d27;
-    right: -70%;
-    top: 0;
-    z-index: 20;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: right 0.3s;
-}
-
-.menu-active .menu__mobile {
-    right: 0;
-}
-
-.menu__list {
-    list-style: none;
-    padding: 0;
-}
-
-.menu__list-item {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.menu__list-item:last-child {
-    border-bottom: none;
-}
-
-/* Media query per dispositivi più piccoli */
-@media screen and (max-width: 768px) {
-    .menu {
-        padding: 0;
-    }
-    
-    .menu__item {
-        padding: 0.5em 0 0.85em;
-    }
-    
-    .menu__border {
-        width: 8.8em;
-    }
-    
-    .menu-active .menu__mobile {
-        width: 100%;
-    }
-}
-
-/* Media query per dispositivi ancora più piccoli */
-@media screen and (max-width: 576px) {
-    .menu__item {
-        padding: 0.25em 0 0.45em;
-    }
-}
+  <!-- Inizializzazione del banner slider -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
