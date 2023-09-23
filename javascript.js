@@ -39,40 +39,31 @@
         }
 
         /* menu */
-     var theToggle = document.getElementById('toggle');
-var menu = document.getElementById('menu'); // Assicurati di utilizzare l'ID corretto del tuo menu
+        var theToggle = document.getElementById('toggle');
+        var menu = document.getElementById('menu'); // Assicurati di utilizzare l'ID corretto del tuo menu
 
-theToggle.onclick = function() {
-    menu.classList.toggle('fixed-menu'); // Aggiunge o rimuove la classe 'fixed-menu'
-    toggleClass(this, 'on');
-    return false;
-}
-
-       
+        theToggle.onclick = function() {
+            menu.classList.toggle('fixed-menu'); // Aggiunge o rimuove la classe 'fixed-menu'
+            toggleClass(this, 'on');
+            return false;
+        }
 
         // hasClass
         function hasClass(elem, className) {
-            return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+            return elem.classList.contains(className);
         }
-       // Funzione per aggiungere una classe
-function addClass(elem, className) {
-    if (!hasClass(elem, className)) {
-        elem.classList.add(className);
-    }
-}
 
-// Funzione per rimuovere una classe
-function removeClass(elem, className) {
-    elem.classList.remove(className);
-}
+        // Funzione per aggiungere una classe
+        function addClass(elem, className) {
+            if (!hasClass(elem, className)) {
+                elem.classList.add(className);
+            }
+        }
 
-// Funzione per verificare se un elemento ha una classe
-function hasClass(elem, className) {
-    return elem.classList.contains(className);
-}
-
-
-
+        // Funzione per rimuovere una classe
+        function removeClass(elem, className) {
+            elem.classList.remove(className);
+        }
 
         // toggleClass
         function toggleClass(elem, className) {
