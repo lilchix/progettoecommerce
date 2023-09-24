@@ -3,7 +3,7 @@ html, body {
       height: 100%;
       font-family: 'Avenir', sans-serif;
       font-size: 14px;
-      color: #000;
+      color: white;
       background-image: url("web design/sfondo.jpg.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -38,7 +38,7 @@ html, body {
 }
 
 .logo{
-  width: 130px;
+  width: 200px;
   margin-top: ;
 }
 
