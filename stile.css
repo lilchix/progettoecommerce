@@ -1,10 +1,10 @@
 html, body {
       position: relative;
       height: 100%;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Avenir', sans-serif;
       font-size: 14px;
       color: #000;
-      background-image: url("img/sfondosito.png");
+      background-image: url("web design/sfondo.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -21,7 +21,7 @@ html, body {
   height: auto;
   position: fixed;
   margin: 0px 0px 30px 0px;
-  background-color: #935931;
+  background-color: #6F1D1B;
 }
 
 .navbar-toggler {
@@ -38,7 +38,7 @@ html, body {
 }
 
 .logo{
-  width: 160px;
+  width: 1300px;
   margin-top: ;
 }
 
@@ -188,7 +188,7 @@ span {
 }
 
 .swiper-slide {
-  background: #DD925F;
+  background: ##6F1D1B;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +213,7 @@ span {
 }
 
 h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Century', serif;
   text-align: center;
   color: black;
   margin: 40px auto -30px auto;
@@ -440,7 +440,7 @@ span {
   height: auto;
   position: fixed;
   margin: 0px 0px 30px 0px;
-  background-color: #935931;
+  background-color: #6F1D1B;
   }
   .swiper {
     width: 100%;
@@ -462,7 +462,7 @@ span {
   }
 
   .footer {
-    background-color: #935931;
+    background-color: ##6F1D1B;
     color: white;
     padding: 20px;
     align-content: center;
@@ -552,12 +552,12 @@ span {
   margin-top: 0px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #935931;
+  box-shadow: 0px 0px 20px #6F1D1B;
 }
 
 tr{
   background-color: white;
-  border-bottom: 1px solid #935931;
+  border-bottom: 1px solid #6F1D1B;
   vertical-align: middle;
 }
 
@@ -577,7 +577,7 @@ tr{
 }
 
 .bottoni-carrello{
-  background-color: #935931;
+  background-color: #6F1D1B;
   color: white;
   border-radius: 5px;
   width: 50px;
@@ -585,7 +585,7 @@ tr{
 }
 
 .footer-capriccioso{
-  background-color: #935931;
+  background-color: #6F1D1B;
   color: white;
   padding: 10px;
   position: inherit;
@@ -612,7 +612,7 @@ label {
     margin: 0px auto;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px #935931;
+    box-shadow: 0px 0px 20px #6F1D1B;
     max-width: 90%;
   }
 
@@ -620,7 +620,7 @@ label {
     display:none;
   }
   .footer-capriccioso{
-    background-color: #935931;
+    background-color: #6F1D1B;
     color: white;
     padding: 10px;
     position: inherit;
