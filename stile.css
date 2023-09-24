@@ -4,7 +4,7 @@ html, body {
       font-family: 'Avenir', sans-serif;
       font-size: 14px;
       color: #000;
-      background-image: url("web design/sfondo..jpg.jpg");
+      background-image: url("web design/sfondo.jpg.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -461,77 +461,216 @@ span {
     padding: 4px;
   }
 
-  .footer {
-    background-color: ##6F1D1B;
+.info {
+    background-color:#8b4513;
     color: white;
-    padding: 20px;
-    align-content: center;
-  }
-
-  .contatti-social{
-    display:inline-block;
-    margin: 0px 30px;
-  }
-  
-  #map {
-    width: auto;
-    height: 150px;
-    margin: 0px 10px 10px auto;
-  }
-  
-  .fot{
-    display: inline-block;
-    margin: auto;
-    vertical-align: top;
-  }
-  
-  h4{
-    padding: 10px;
-  }
-
-  #rimandosocial{
-    margin-left:0px ;
-    padding-left:0px
-  }
-  
-  .social{
-    margin: 0px 10px;
-    display: inline-block;
-    color: white;
-
-  }
-  
-  #testofooter{
-    max-width: 500px;
-    font-size: 12px;
-    text-align: left;
-    color: #FFE6AE;
-  }
-  
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align:  center;
+    font-family: Trebuchet MS, sans-serif;
 }
 
-@media screen and (max-width: 700px){
-  #map {
-    width: auto;
-    height: 150px;
-    margin: 0px auto 10px auto;
-  }
 
-  #box-prodotti{
-    margin: 3% auto;
-    max-width: 80%;
-    text-align: center;
-  }
+#iconimagesbot {
+    font-size: 25px !important;
+    vertical-align:  bottom;
+    margin: 0 10px;
+}
 
-  .btn-primary{
-    font-size: 10px;
-    padding: 4px;
-  }
+#iconimagesbot2 {
+    font-size: 27px !important;
+    vertical-align: bottom;
+    margin: 0 10px;
+}
 
-  h4{
-    border-top: 2px solid white;
-    padding: 10px;
-  }
+#iconimagesbot3 {
+    font-size: 27px !important;
+    vertical-align: bottom;
+    margin: 0 10px;
+}
+
+.infotext {
+     vertical-align: center;
+     display: inline;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+
+.social {
+    width: 30px;
+    vertical-align: center;
+    margin: 5px;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.footer {
+  background-color: #8b4513 !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.contatti {
+	display: flex;
+	flex-direction: column;
+
+	margin: 50px 30px;
+}
+
+.contatti .form {
+	/* width: 80%; */
+}
+
+.contatti .indirizzo {
+	text-align: center;
+}
+
+.contatti .indirizzo img {
+	height: 2em;
+	padding-right: 10px;
+}
+
+.contatti .indirizzo a {
+	text-decoration: none;
+	color: #8b4513;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+	font: 400 12px/16px "Gotham", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+	background: #ffffff;
+}
+
+#contact h3 {
+	color: #8b4513;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+	width: 100%;
+	border: 1px solid #CCC;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #AAA;
+}
+
+#contact textarea {
+	height: 100px;
+	max-width: 100%;
+	resize: none;
+}
+
+#contact button[type="submit"] {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: #8b4513;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+	background: #8b4513;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+	outline: 0;
+	border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+	color: #888;
+}
+
+:-moz-placeholder {
+	color: #888;
+}
+
+::-moz-placeholder {
+	color: #888;
+}
+
+:-ms-input-placeholder {
+	color: #888;
+}
+
+@media (max-width: 768px) {
+	.contatti {
+		flex-direction: column;
+
+		margin: 0 20px;
+	}
+
+	#contact {
+		width: 100%;
+	}
+
+	.contatti .form {
+		width: 100%;
+		margin: 0;
+	}
+
+	.contatti .indirizzo {
+		margin: 20px 0;
+		order: 2;
+
+	}
+
+	.map {
+		margin: 0px 20px 20px 20px;
+	}
+
 }
 
 
