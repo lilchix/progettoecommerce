@@ -38,7 +38,7 @@ html, body {
 }
 
 .logo{
-  width: 200px;
+  width: 130px;
   margin-top: ;
 }
 
@@ -127,6 +127,7 @@ span {
   
   .menu-text{
 	opacity: 0;
+	text-color: white; 
 	font-size: 0em;
 	padding: 10px 0;
 	-webkit-transition: 0.1s;
@@ -178,6 +179,7 @@ span {
 
 .boxcarrello{
 	float: right;
+	color: #432818;
 }
 
 /*swiper*/
@@ -215,7 +217,7 @@ span {
 h1 {
   font-family: 'Oswald', serif;
   text-align: center;
-  color: black;
+  color: white;
   margin: 40px auto -30px auto;
   text-shadow: 0px 0px 6px rgba(255,255,255,10);
   padding: 30px;
@@ -231,6 +233,7 @@ h1 {
 p.card-text{
   margin-top: 20px;
   margin-bottom: 10px;
+  text-color: #432818;
 }
 
 .card-img-top:hover {
