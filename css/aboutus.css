@@ -1,1 +1,50 @@
+/*CHI SIAMO*/
+#chisiamo.card {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #ccc;
+}
+#chisiamo.card:hover {
+  transform: scale(1.1);
+}
+.team-card:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.team-section {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px !important;
+}
+.team-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.team-card img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
+@media (max-width: 600px) {
+  .team-card {
+      width: 100%;
+  }
+}
+#team /*h2*/ {
+  text-align: center;
+}
+#description/*container*/ {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
