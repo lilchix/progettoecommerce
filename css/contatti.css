@@ -188,3 +188,37 @@ fieldset {
 	}
 
 }
+.footer {
+  background-color: #432818;
+  color: white;
+  padding: 10px;
+}
+
+
+#map {
+  width: auto;
+  height: 150px;
+  margin-right:40px
+}
+
+.fot{
+  display: inline-block;
+  margin: 10px auto;
+  vertical-align: top;
+}
+
+
+
+}
+
+#testofooter{
+  max-width: 500px;
+  font-size: 12px;
+  text-align: left;
+  color: white;
+}
+
+@media screen and (max-width: 1200px){
+  .logo{
+    width: 100px;
+  }
