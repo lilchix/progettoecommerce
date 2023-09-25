@@ -55,7 +55,7 @@ header {
 
 .btn {
 	background-color: #432818;
-	border-color: #432818;
+	border: none; 
 }
 
 .card-title {
