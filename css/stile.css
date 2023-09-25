@@ -47,10 +47,11 @@ header {
 .casella-logo{
   display: inline-block;
   width: auto%;
+  height: 100%
 }
 
 .logo{
-  width: 160px;
+  width: 60px;
 }
 }
 
