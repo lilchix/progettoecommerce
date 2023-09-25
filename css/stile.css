@@ -71,6 +71,8 @@ header {
 }
 
 .card-price {
+	font-family: "Oswald";
+	font-style: bolder;
 	font-size: 150%;
 }
 
@@ -92,13 +94,13 @@ header {
 	display: none;
 }
 
-.swiper-button-next,	
+.swiper-button-next,
 .swiper-button-prev {
-	color: #432818;
+	color: #2D407A;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: #432818;
+	background-color: #2D407A;
 }
 
 #ancora{
