@@ -1,45 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const progressCircle = document.querySelector(".autoplay-progress svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
-    
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        on: {
-            autoplayTimeLeft(s, time, progress) {
-                progressCircle.style.setProperty("--progress", 1 - progress);
-                progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-            }
-        }
-    });
-
-
 
 var products = {
-	"jordan": {
-		"id": "jordan",
-		"name": "Jordan 1 Retro High OG",
-		"image": "chicago_short.jpg",
-		"price": 349.99
+	"moka da 4": {
+		"id": "moka da 4",
+		"name": "moka da 4",
+		"image": "moka1.jpeg",
+		"price": 20
 	},
-	"zebra": {
-		"id": "zebra",
-		"name": "Adidas Yeezy Boost 350 V2",
-		"image": "zebra_short.jpg",
-		"price": 419.99
+	"moka da 6": {
+		"id": "moka da 6",
+		"name": "moka da 6",
+		"image": "moka2.jpeg",
+		"price": 25
 	},
+	"moka da 2": {
+		"id": "moka da 2",
+		"name": "moka da 2",
+		"image": "moka3.jpeg",
+		"price": 15
 };
 
 // Creates an item object
