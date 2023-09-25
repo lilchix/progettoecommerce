@@ -65,15 +65,28 @@
 	<main class="container my-5">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="/web design/moka1.jpeg" alt="Immagine di esempio" class="img-fluid">
+				<img src="/web design/moka da 4.jpeg" alt="Immagine di esempio" class="img-fluid">
 			</div>
 			<div class="col-md-6">
 				<h1 class="mb-4">mOKa da 4</h1>
-				<p class="mb-4">Chicago Lost and Found</p>
+				<p class="mb-4">La mOKa da 4 tazzine è la compagna perfetta per condividere l'aroma e il sapore del caffè con amici e familiari.</p>
 				<h2 class="mb-3">Prezzo: €20</h2>
 				<form>
 					<div class="mb-3">
-						<label for="taglia" class="form-label">Colore:</label>
+						<label for="taglia" class="form-label">Colore sopra:</label>
+						<select id="taglia" class="form-select" aria-label="Default select example">
+							<option selected>Seleziona il colore</option>
+							<option value="1">rosso</option>
+							<option value="2">arancione</option>
+							<option value="3">giallo</option>
+							<option value="4">verde</option>
+							<option value="5">blu</option>
+							<option value="6">azzurro</option>
+							<option value="7">rosa</option>
+							<option value="8">viola</option>
+						</select>
+						<div class="mb-3">
+						<label for="taglia" class="form-label">Colore sotto:</label>
 						<select id="taglia" class="form-select" aria-label="Default select example">
 							<option selected>Seleziona il colore</option>
 							<option value="1">rosso</option>
@@ -94,13 +107,26 @@
 		</div>
 	</main>
 
-	<footer class="bg-dark text-light py-3">
-		<div class="container text-center">
-			<p>&copy; 2023 SNEAKERSITE - Tutti i diritti riservati</p>
-			<p>info@sneakersite - 0321456789 - P.IVA 01234567890</p>
-			<p>@alessandroferrari</p>
-		</div>
-	</footer>
+	    <footer class="footer">
+      <div class="container text-center">
+        
+        <div class="fot">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2798.854587066455!2d8.6137757!3d45.4525863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a24573b9d29%3A0x5064224377bd31e3!2sVia%20Costantino%20Porta%2C%2025%2C%2028100%20Novara%20NO!5e0!3m2!1sen!2sit!4v1654440794287!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+        </div> 
+        
+        <div class="fot">
+          <p id="testofooter">
+            <i class="material-icons" style="font-size:15px; color: white;">location_on</i>  Novara (Italy), via C. Porta 25<br>
+            <i class="material-icons" style="font-size:15px; color: white;">call</i>  (+39) 0321.627101 / 628381 <br>
+            <i class="material-icons" style="font-size:15px; color: white;">email</i>  moka@gmail.it<br>
+            <br>
+            mOKa srl<br>
+            © Sella srl - PI 01176320032
+          </p>
+        </div>
+        </div>
+      </div>
+    </footer>
 
 
 	<!-- Collegamento ai file JavaScript di Bootstrap -->
