@@ -97,6 +97,20 @@ header {
 	background-color:#432818;
 }
 
+#ancora{
+  height: 8%;
+  margin-top: -60px;
+}
+
+h1 {
+  font-family: 'Oswald', serif;
+  text-align: center;
+  color: black;
+  margin: 40px auto -30px auto;
+  text-shadow: 0px 0px 6px rgba(255,255,255,10);
+  padding: 30px;
+}
+
 footer {
   background-color: #432818;
 	bottom: 0;
