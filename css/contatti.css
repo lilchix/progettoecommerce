@@ -46,7 +46,7 @@ header {
 
 .contatti .indirizzo a {
 	text-decoration: none;
-	color: 432818;
+	color: #432818;
 }
 
 .map {
@@ -60,7 +60,7 @@ header {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-	font: 400 12px/16px "Oswald", Helvetica, Arial, sans-serif;
+	font: 400 12px/16px "Oswald", "Avenir", sans-serif;
 }
 
 #contact {
@@ -68,7 +68,7 @@ header {
 }
 
 #contact h3 {
-	color: 432818;
+	color: #432818;
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
