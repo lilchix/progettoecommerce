@@ -10,7 +10,7 @@ header: '**mOKa**'
 ---
 
 
-! [ h:120px] (immagini/logo marrone.png)
+![ h:80px ](immagini/logo marrone.png)
 
 **WEB DESIGN 2**
 A.A **2022-2023**
@@ -26,6 +26,10 @@ Prof. **Matteo Baccan**
 img[alt~='center'] {
   display: block;
   margin: 0 auto;
+}
+
+header{
+  font-family: 'Avenir', serif;
 }
 " -->
 
@@ -57,10 +61,19 @@ CodeSpace **semplifica e accelera il processo di sviluppo** delle applicazioni e
 ---
 # Strumenti usati
 
-Per vedere l'anteprima del mio sito, ho collegato il mio repository a questo link di netlify: https://github.com/ottafregu/ecommerce-freguglia-dolcini
+Per vedere l'anteprima del mio sito, ho collegato il mio repository a questo link di netlify: (https://gnemmi-moka.netlify.app/)
 
 **Netlify** è una società di cloud _computing remote-first_ che offre una piattaforma di sviluppo che include build, deployment e servizi di back-end serverless per applicazioni Web e siti Web dinamici. La piattaforma è costruita su standard web aperti, rendendo possibile l'integrazione di strumenti di compilazione, framework web, API e varie tecnologie web in un flusso di lavoro unificato per gli sviluppatori.
 
 ![bg right:30% h:130px](immagini/Netlify_logo.png)
 
 ---
+
+# Strumenti usati
+Per la creazione di alcune parti del mio sito, ho utilizzato **Bootstrap**, in modo da aiutarmi a gestire in maniera più responsive gli spazi.
+Bootstrap è un framework di sviluppo web gratuito e open source, progettato per facilitare il processo di sviluppo web di siti responsive e mobile-first, fornendo una raccolta di sintassi per i modelli di progettazione.
+
+![bg right:30% h:200px](immagini/Bootstrap_logo.png)
+
+---
+
