@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('[https://github.com/ottafregu/ecommerce-freguglia-dolcini](https://github.com/lilchix/progettoecommerce)/blob/main/intro/immagini/sfondoslide.jpg?raw=true')
+backgroundImage: (https://image.slidesdocs.com/responsive-images/background/geometric-funny-alphabet-education-colorful-cute-letters-powerpoint-background_ba877b436a__960_540.jpg)
 marp: true
 footer: https://github.com/lilchix/progettoecommerce
 header: '**mOKa**'
