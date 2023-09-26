@@ -3,14 +3,13 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url: (https://image.slidesdocs.com/responsive-images/background/geometric-funny-alphabet-education-colorful-cute-letters-powerpoint-background_ba877b436a__960_540.jpg)
+backgroundImage: url(https://image.slidesdocs.com/responsive-images/background/geometric-funny-alphabet-education-colorful-cute-letters-powerpoint-background_ba877b436a__960_540.jpg)
 marp: true
 footer: https://github.com/lilchix/progettoecommerce
 header: '**mOKa**'
 ---
 
-
-![ h:80px ](immagini/logo marrone.png)
+# mOKa
 
 **WEB DESIGN 2**
 A.A **2022-2023**
