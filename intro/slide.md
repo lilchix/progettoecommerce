@@ -82,12 +82,14 @@ Bootstrap è un framework di sviluppo web gratuito e open source, progettato per
 _Headline & Footer_
 
 ---
-![bgh:50px ](immagini/headline.png)
+
 ## Headline
 Nella parte sinistra troviamo il **logo**, che se cliccato, funge da collegamento alla pagina home.
 Di seguito abbiamo le tre pagine principali: **Home, ABout us e Contatti** che anche loro fungono da collegamento alle loro pagine.
 Nella parte destra troviamo l'icona del **carrello** in cui, grazie alla funzione 'aggiungiAlCarrello' e 'rimuoviDalCarrello', associate ai tasti presenti sotto ai box prodotti, possiamo vedere il numero di questi inseritovi dentro.
 Inoltre, questa icona funge da collegamento alla pagina del carrello stesso.
+
+![bgh:50px ](immagini/headline.png)
 ---
 
 ## Footer
