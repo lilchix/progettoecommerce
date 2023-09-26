@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url(https://i.pinimg.com/originals/c4/ff/ea/c4ffeaae433bc0c44f97eef925d73950.jpg)
+backgroundImage: url('https://i.pinimg.com/originals/c4/ff/ea/c4ffeaae433bc0c44f97eef925d73950.jpg')
 marp: true
 footer: https://github.com/lilchix/progettoecommerce
 header: '**mOKa**'
