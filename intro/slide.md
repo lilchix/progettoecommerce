@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url(https://github.com/lilchix/progettoecommerce/blob/main/intro/immagini/sfondoslide.png)
+backgroundImage: url(https://i.pinimg.com/originals/c4/ff/ea/c4ffeaae433bc0c44f97eef925d73950.jpg)
 marp: true
 footer: https://github.com/lilchix/progettoecommerce
 header: '**mOKa**'
@@ -59,7 +59,7 @@ CodeSpace **semplifica e accelera il processo di sviluppo** delle applicazioni e
 ![bg right:30% h:300px](immagini/logo_codespace.png)
 
 ---
-# Strumenti usati
+## Strumenti usati
 
 Per vedere l'anteprima del mio sito, ho collegato il mio repository a questo link di netlify: (https://gnemmi-moka.netlify.app/)
 
@@ -69,7 +69,7 @@ Per vedere l'anteprima del mio sito, ho collegato il mio repository a questo lin
 
 ---
 
-# Strumenti usati
+## Strumenti usati
 Per la creazione di alcune parti del mio sito, ho utilizzato **Bootstrap**, in modo da aiutarmi a gestire in maniera più responsive gli spazi.
 Bootstrap è un framework di sviluppo web gratuito e open source, progettato per facilitare il processo di sviluppo web di siti responsive e mobile-first, fornendo una raccolta di sintassi per i modelli di progettazione.
 
@@ -77,21 +77,20 @@ Bootstrap è un framework di sviluppo web gratuito e open source, progettato per
 
 ---
 
-# Elementi comuni
+## Elementi comuni
 
 _Headline & Footer_
 
 ---
 ![bgh:50px ](immagini/headline.png)
 ## Headline
-
 Nella parte sinistra troviamo il **logo**, che se cliccato, funge da collegamento alla pagina home.
 Di seguito abbiamo le tre pagine principali: **Home, ABout us e Contatti** che anche loro fungono da collegamento alle loro pagine.
 Nella parte destra troviamo l'icona del **carrello** in cui, grazie alla funzione 'aggiungiAlCarrello' e 'rimuoviDalCarrello', associate ai tasti presenti sotto ai box prodotti, possiamo vedere il numero di questi inseritovi dentro.
 Inoltre, questa icona funge da collegamento alla pagina del carrello stesso.
 ---
-## Footer
 
+## Footer
 Nel footer troviamo la mappa e i contatti **due elementi inline** che, allo stringersi della pagina, si posizionano uno sotto l'altro grazie ad una **media query**.
 
 ![bgh:120px ](immagini/footer.png)
