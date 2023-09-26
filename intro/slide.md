@@ -9,7 +9,8 @@ footer: https://github.com/lilchix/progettoecommerce
 header: '**mOKa**'
 ---
 
-# mOKa
+# Presentazione e-commerce
+![ h:80px ](immagini/logomarrone.png)
 
 **WEB DESIGN 2**
 A.A **2022-2023**
